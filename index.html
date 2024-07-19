@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exame de Fluxometria</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .header {
+            background-color: #2a369b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .info {
+            margin: 20px 0;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .conclusion {
+            margin-top: 20px;
+        }
+        .signature {
+            margin-top: 40px;
+            text-align: right;
+        }
+        .signature p {
+            display: inline-block;
+            margin: 0;
+            border-top: 1px solid #000;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Exame de Fluxometria</div>
+        <div class="info">
+            <p><strong>Nome:</strong> [Nome]</p>
+            <p><strong>Sexo:</strong> [Sexo]</p>
+            <p><strong>Realização:</strong> [Data]</p>
+        </div>
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <div class="conclusion">
+            <strong>Conclusão:</strong>
+            <p>[Conclusão]</p>
+        </div>
+        <div class="signature">
+            <p>Assinatura</p>
+        </div>
+        <button id="downloadPdf">Download PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
